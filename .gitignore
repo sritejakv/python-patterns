@@ -3,3 +3,6 @@ __pycache__
 .idea
 *.egg-info/
 .tox/
+*.dot
+*.png
+*.DS_Store

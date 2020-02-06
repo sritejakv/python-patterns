@@ -12,7 +12,8 @@ def record_call_graph(request):
     with PyCallGraph(output=GraphvizOutput(dot_file='./dotFiles/%s.dot' %current_millis),
                      config=Config(debug=True,
                                    trace_filter=GlobbingFilter(
-                                       exclude=['pycallgraph.*', 'tests.*', '*.yml', "_pytest.*", "pluggy.*"],
+                                       exclude=['pycallgraph.*', 'tests.*', '*.yml', "_pytest.*", "pluggy.*",
+                                                "3-tier*"],
                                        include=['patterns.*']
                                    )
                                    )):

@@ -103,7 +103,6 @@ class Controller:
 
 
 if __name__ == '__main__':
-
     model = ProductModel()
     view = ConsoleView()
     controller = Controller(model, view)

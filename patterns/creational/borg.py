@@ -86,5 +86,16 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    rm1 = Borg()
+    rm2 = Borg()
+    rm1.state = 'Idle'
+    rm2.state = 'Running'
+    print('rm1: {0}'.format(rm1))
+    print('rm2: {0}'.format(rm2))
+    rm2.state = 'Zombie'
+    print('rm1: {0}'.format(rm1))
+    print('rm2: {0}'.format(rm2))
+    rm3 = YourBorg()
+    print('rm1: {0}'.format(rm1))
+    print('rm2: {0}'.format(rm2))
+    print('rm3: {0}'.format(rm3))

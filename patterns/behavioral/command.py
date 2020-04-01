@@ -60,5 +60,25 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    from os.path import lexists
+
+    command_stack = [
+        MoveFileCommand('foo.txt', 'bar.txt'),
+        MoveFileCommand('bar.txt', 'baz.txt')
+    ]
+
+    # Verify that none of the target files exist
+    assert not lexists("foo.txt")
+    assert not lexists("bar.txt")
+    assert not lexists("baz.txt")
+
+    # Create empty file
+    open("foo.txt", "w").close()
+
+    # Commands can be executed later on
+    for cmd in command_stack:
+        cmd.execute()
+
+    # And can also be undone at will
+    for cmd in reversed(command_stack):
+        cmd.undo()

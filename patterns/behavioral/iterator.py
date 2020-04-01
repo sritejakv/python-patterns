@@ -39,5 +39,8 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    for number in count_to_two():
+        print(number)
+
+    for number in count_to_five():
+        print(number)

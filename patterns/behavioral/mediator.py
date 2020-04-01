@@ -46,5 +46,9 @@ def main():
 
 
 if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+    molly = User('Molly')
+    mark = User('Mark')
+    ethan = User('Ethan')
+    molly.say("Hi Team! Meeting at 3 PM today.")
+    mark.say("Roger that!")
+    ethan.say("Alright.")

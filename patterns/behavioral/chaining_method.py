@@ -30,5 +30,6 @@ def main():
 
 
 if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+    move = Action('move')
+    person = Person('Jack', move)
+    person.do_action().amount('5m').stop()

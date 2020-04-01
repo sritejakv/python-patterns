@@ -68,5 +68,6 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    template_function(get_text, to_save=True)
+    template_function(get_pdf, converter=convert_to_text)
+    template_function(get_csv, to_save=True)

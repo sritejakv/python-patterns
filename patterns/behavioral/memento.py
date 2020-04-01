@@ -133,5 +133,36 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
+    num_obj = NumObj(-1)
+    print(num_obj)
+
+    a_transaction = Transaction(True, num_obj)
+
+    try:
+        for i in range(3):
+            num_obj.increment()
+            print(num_obj)
+        a_transaction.commit()
+        print('-- committed')
+        for i in range(3):
+            num_obj.increment()
+            print(num_obj)
+        num_obj.value += 'x'  # will fail
+        print(num_obj)
+    except Exception:
+        a_transaction.rollback()
+        print('-- rolled back')
+
+    print(num_obj)
+
+    print('-- now doing stuff ')
+
+    try:
+        num_obj.do_stuff()
+    except Exception:
+        print('-> doing stuff failed!')
+        import sys
+        import traceback
+
+        traceback.print_exc(file=sys.stdout)
+    print(num_obj)

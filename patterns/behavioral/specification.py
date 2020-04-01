@@ -106,5 +106,11 @@ def main():
 
 
 if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+    andrey = User()
+    ivan = User(super_user=True)
+    vasiliy = 'not User instance'
+    root_specification = UserSpecification().and_specification(SuperUserSpecification())
+    # Is specification satisfied by <name>
+    root_specification.is_satisfied_by(andrey), 'andrey'
+    root_specification.is_satisfied_by(ivan), 'ivan'
+    root_specification.is_satisfied_by(vasiliy), 'vasiliy'

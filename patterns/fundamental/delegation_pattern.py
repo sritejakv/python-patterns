@@ -47,6 +47,6 @@ class Delegate:
 
 
 if __name__ == '__main__':
-    import doctest
-
-    doctest.testmod()
+    delegator = Delegator(Delegate())
+    print(delegator.p1)
+    delegator.do_something("nothing")

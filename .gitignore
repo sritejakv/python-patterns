@@ -6,3 +6,4 @@ __pycache__
 *.dot
 *.png
 *.DS_Store
+dynamicCGs/*

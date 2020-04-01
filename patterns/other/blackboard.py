@@ -122,5 +122,10 @@ def main():
 
 if __name__ == '__main__':
     random.seed(1234)  # for deterministic doctest outputs
-    import doctest
-    doctest.testmod()
+    blackboard = Blackboard()
+    blackboard.add_expert(Student(blackboard))
+    blackboard.add_expert(Scientist(blackboard))
+    blackboard.add_expert(Professor(blackboard))
+
+    c = Controller(blackboard)
+    contributions = c.run_loop()

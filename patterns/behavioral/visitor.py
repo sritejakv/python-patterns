@@ -69,5 +69,8 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    a, b, c = A(), B(), C()
+    visitor = Visitor()
+    visitor.visit(a)
+    visitor.visit(b)
+    visitor.visit(c)

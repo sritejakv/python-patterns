@@ -69,5 +69,7 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    e, g = get_localizer(language="English"), get_localizer(language="Greek")
+    # Localize some text
+    for msg in "dog parrot cat bear".split():
+        print(e.localize(msg), g.localize(msg))

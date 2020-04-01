@@ -96,5 +96,20 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    data1 = Data('Data 1')
+    data2 = Data('Data 2')
+    view1 = DecimalViewer()
+    view2 = HexViewer()
+    data1.attach(view1)
+    data1.attach(view2)
+    data2.attach(view2)
+    data2.attach(view1)
+    data1.data = 10
+    data2.data = 15
+    data1.data = 3
+    data2.data = 5
+    # Detach HexViewer from data1 and data2
+    data1.detach(view2)
+    data2.detach(view2)
+    data1.data = 10
+    data2.data = 15

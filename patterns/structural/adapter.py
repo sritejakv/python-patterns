@@ -115,5 +115,17 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
+    objects = []
+    dog = Dog()
+    print(dog.__dict__)
+    objects.append(Adapter(dog, make_noise=dog.bark))
+    print(objects[0].original_dict())
+    cat = Cat()
+    objects.append(Adapter(cat, make_noise=cat.meow))
+    human = Human()
+    objects.append(Adapter(human, make_noise=human.speak))
+    car = Car()
+    objects.append(Adapter(car, make_noise=lambda: car.make_noise(3)))
+
+    for obj in objects:
+        print("A {0} goes {1}".format(obj.name, obj.make_noise()))

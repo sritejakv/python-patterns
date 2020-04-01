@@ -109,5 +109,6 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    house = House()
+    flat = Flat()
+    complex_house = construct_building(ComplexHouse)

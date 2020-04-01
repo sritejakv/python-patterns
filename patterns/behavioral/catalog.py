@@ -162,5 +162,11 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    test = Catalog('param_value_2')
+    test.main_method()
+    test = CatalogInstance('param_value_1')
+    test.main_method()
+    test = CatalogClass('param_value_2')
+    test.main_method()
+    test = CatalogStatic('param_value_1')
+    test.main_method()

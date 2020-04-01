@@ -88,5 +88,27 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    message_center = Provider()
+    fftv = Publisher(message_center)
+    jim = Subscriber("jim", message_center)
+    jim.subscribe("cartoon")
+    jack = Subscriber("jack", message_center)
+    jack.subscribe("music")
+    gee = Subscriber("gee", message_center)
+    gee.subscribe("movie")
+    vani = Subscriber("vani", message_center)
+    vani.subscribe("movie")
+    vani.unsubscribe("movie")
+
+    # Note that no one subscirbed to `ads`
+    # and that vani changed their mind
+
+    fftv.publish("cartoon")
+    fftv.publish("music")
+    fftv.publish("ads")
+    fftv.publish("movie")
+    fftv.publish("cartoon")
+    fftv.publish("cartoon")
+    fftv.publish("movie")
+    fftv.publish("blank")
+    message_center.update()

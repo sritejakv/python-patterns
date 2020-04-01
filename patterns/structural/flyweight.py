@@ -80,5 +80,11 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    c1 = Card('9', 'h')
+    c2 = Card('9', 'h')
+    c1.new_attr = 'temp'
+    c3 = Card('9', 'h')
+    hasattr(c3, 'new_attr')
+    Card._pool.clear()
+    c4 = Card('9', 'h')
+    hasattr(c4, 'new_attr')

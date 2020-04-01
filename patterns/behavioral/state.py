@@ -84,5 +84,9 @@ def main():
 
 
 if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+    radio = Radio()
+    actions = [radio.scan] * 2 + [radio.toggle_amfm] + [radio.scan] * 2
+    actions *= 2
+
+    for action in actions:
+        action()

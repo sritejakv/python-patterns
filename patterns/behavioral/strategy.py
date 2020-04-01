@@ -47,5 +47,6 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    Order(100)
+    Order(100, discount_strategy=ten_percent_discount)
+    Order(1000, discount_strategy=on_sale_discount)

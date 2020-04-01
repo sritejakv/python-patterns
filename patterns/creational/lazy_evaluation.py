@@ -100,5 +100,21 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
+    Jhon = Person('Jhon', 'Coder')
+
+    print(Jhon.name)
+    print(Jhon.occupation)
+
+    # Before we access `relatives`
+    sorted(Jhon.__dict__.items())
+
+    print(Jhon.relatives)
+
+    sorted(Jhon.__dict__.items())
+
+    print(Jhon.parents)
+
+    sorted(Jhon.__dict__.items())
+
+    print(Jhon.parents)
+    print(Jhon.call_count2)

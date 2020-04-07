@@ -1,8 +1,8 @@
 """
-@author: Gordeev Andrey <gordeev.and.and@gmail.com>
-
-*TL;DR
-Provides a centralized entry point that controls and manages request handling.
+:testcase_name front_controller
+:author Gordeev Andrey <gordeev.and.and@gmail.com>
+:source: https://github.com/faif/python-patterns/blob/master/patterns/structural/front_controller.pyw
+:description Provides a centralized entry point that controls and manages request handling.
 """
 
 

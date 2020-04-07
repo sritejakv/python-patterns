@@ -1,5 +1,7 @@
 """
-A class that uses different static function depending of a parameter passed in
+:testcase_name catalog
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/catalog.py
+:description A class that uses different static function depending of a parameter passed in
 init. Note the use of a single dictionary instead of multiple conditions
 """
 

@@ -1,10 +1,7 @@
 """
-*TL;DR
-Encapsulates all information needed to perform an action or trigger an event.
-
-*Examples in Python ecosystem:
-Django HttpRequest (without `execute` method):
- https://docs.djangoproject.com/en/2.1/ref/request-response/#httprequest-objects
+:testcase_name command
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/command.py
+:description Encapsulates all information needed to perform an action or trigger an event.
 """
 
 import os

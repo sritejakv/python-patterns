@@ -1,3 +1,11 @@
+"""
+:testcase_name graph_search
+:source https://github.com/faif/python-patterns/blob/master/patterns/other/graph_search.py
+:description Graph search emulation in python, from source
+    http://www.python.org/doc/essays/graphs/
+"""
+
+
 class GraphSearch:
 
     """Graph search emulation in python, from source

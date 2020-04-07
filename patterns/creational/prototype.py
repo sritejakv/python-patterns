@@ -1,6 +1,7 @@
 """
-*What is this pattern about?
-This patterns aims to reduce the number of classes required by an
+:testcase_name prototype
+:source https://github.com/faif/python-patterns/blob/master/patterns/creational/prototype.py
+:description This patterns aims to reduce the number of classes required by an
 application. Instead of relying on subclasses it creates objects by
 copying a prototypical instance at run-time.
 
@@ -8,7 +9,6 @@ This is useful as it makes it easier to derive new kinds of objects,
 when instances of the class have only a few different combinations of
 state, and when instantiation is expensive.
 
-*What does this example do?
 When the number of prototypes in an application can vary, it can be
 useful to keep a Dispatcher (aka, Registry or Manager). This allows
 clients to query the Dispatcher for a prototype before cloning a new
@@ -16,9 +16,6 @@ instance.
 
 Below provides an example of such Dispatcher, which contains three
 copies of the prototype: 'default', 'objecta' and 'objectb'.
-
-*TL;DR
-Creates new object instances by cloning prototype.
 """
 
 

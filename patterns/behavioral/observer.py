@@ -1,12 +1,7 @@
 """
-http://code.activestate.com/recipes/131499-observer-pattern/
-
-*TL;DR
-Maintains a list of dependents and notifies them of any state changes.
-
-*Examples in Python ecosystem:
-Django Signals: https://docs.djangoproject.com/en/2.1/topics/signals/
-Flask Signals: http://flask.pocoo.org/docs/1.0/signals/
+:testcase_name observer
+:source: https://github.com/faif/python-patterns/blob/master/patterns/behavioral/observer.py
+:description Maintains a list of dependents and notifies them of any state changes.
 """
 
 

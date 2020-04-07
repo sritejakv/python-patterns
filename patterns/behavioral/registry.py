@@ -1,3 +1,12 @@
+"""
+:testcase_name: registry
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/registry.py
+:description Any class that inherits from BaseRegisteredClass will be included
+    inside the dict RegistryHolder.REGISTRY, the key being the name of the
+    class and the associated value, the class itself.
+"""
+
+
 class RegistryHolder(type):
 
     REGISTRY = {}

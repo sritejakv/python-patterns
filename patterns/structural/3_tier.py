@@ -1,6 +1,7 @@
 """
-*TL;DR
-Separates presentation, application processing, and data management functions.
+:testcase_name 3_tier
+:description Separates presentation, application processing, and data management functions.
+:source: https://github.com/faif/python-patterns/blob/master/patterns/structural/3-tier.py
 """
 
 

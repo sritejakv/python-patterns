@@ -1,12 +1,11 @@
 """
-*What is this pattern about?
-It decouples the creation of a complex object and its representation,
+:testcase_name builder
+:source https://github.com/faif/python-patterns/blob/master/patterns/creational/borg.py
+:description It decouples the creation of a complex object and its representation,
 so that the same process can be reused to build objects from the same
 family.
 This is useful when you must separate the specification of an object
 from its actual representation (generally for abstraction).
-
-*What does this example do?
 
 The first example achieves this by using an abstract base
 class for a building, where the initializer (__init__ method) specifies the
@@ -18,17 +17,6 @@ see https://stackoverflow.com/questions/1453131/how-can-i-get-polymorphic-behavi
 - which means this Python technique will not work. The polymorphism
 required has to be provided by an external, already constructed
 instance of a different class.
-
-In general, in Python this won't be necessary, but a second example showing
-this kind of arrangement is also included.
-
-*Where is the pattern used practically?
-
-*References:
-https://sourcemaking.com/design_patterns/builder
-
-*TL;DR
-Decouples the creation of a complex object and its representation.
 """
 
 

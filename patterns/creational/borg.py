@@ -1,12 +1,12 @@
 """
-*What is this pattern about?
-The Borg pattern (also known as the Monostate pattern) is a way to
+:testcase_name borg
+:source https://github.com/faif/python-patterns/blob/master/patterns/creational/borg.py
+:description The Borg pattern (also known as the Monostate pattern) is a way to
 implement singleton behavior, but instead of having only one instance
 of a class, there are multiple instances that share the same state. In
 other words, the focus is on sharing state instead of sharing instance
 identity.
 
-*What does this example do?
 To understand the implementation of this pattern in Python, it is
 important to know that, in Python, instance attributes are stored in a
 attribute dictionary called __dict__. Usually, each instance will have
@@ -19,16 +19,6 @@ instance (i.e., in the __init__ method). Other attributes are usually
 added to the instance's attribute dictionary, but, since the attribute
 dictionary itself is shared (which is __shared_state), all other
 attributes will also be shared.
-
-*Where is the pattern used practically?
-Sharing state is useful in applications like managing database connections:
-https://github.com/onetwopunch/pythonDbTemplate/blob/master/database.py
-
-*References:
-https://fkromer.github.io/python-pattern-references/design/#singleton
-
-*TL;DR
-Provides singleton-like behavior sharing state between instances.
 """
 
 

@@ -1,3 +1,9 @@
+"""
+:testcase_name chaining method
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/chaining_method.py
+"""
+
+
 class Person:
     def __init__(self, name, action):
         self.name = name

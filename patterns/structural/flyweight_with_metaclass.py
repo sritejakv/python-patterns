@@ -1,3 +1,8 @@
+"""
+:testcase_name fliweight_with_metaclass
+:source https://github.com/faif/python-patterns/blob/master/patterns/structural/flyweight_with_metaclass.py
+:description Similar to flyweight.py but with meta class.
+"""
 import weakref
 
 

@@ -1,8 +1,7 @@
 """
-http://ginstrom.com/scribbles/2007/10/08/design-patterns-python-style/
-Implementation of the iterator pattern with a generator
-
-*TL;DR
+:testcase_name iterator
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/iterator.py
+:description Implementation of the iterator pattern with a generator
 Traverses a container and accesses the container's elements.
 """
 

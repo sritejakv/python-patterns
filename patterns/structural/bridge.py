@@ -1,9 +1,8 @@
 """
-*References:
+:testcase_name bridge
+:source https://github.com/faif/python-patterns/blob/master/patterns/structural/bridge.py
+:description Demonstrates bridge pattern in Python. Decouples an abstraction from its implementation.
 http://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Bridge_Pattern#Python
-
-*TL;DR
-Decouples an abstraction from its implementation.
 """
 
 

@@ -1,21 +1,14 @@
 """
-*What is this pattern about?
-
-The Chain of responsibility is an object oriented version of the
+:testcase_name chain_of_responsibility
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/chain_of_responsibility.py
+:description The Chain of responsibility is an object oriented version of the
 `if ... elif ... elif ... else ...` idiom, with the
 benefit that the condition–action blocks can be dynamically rearranged
-and reconfigured at runtime.
-
-This pattern aims to decouple the senders of a request from its
+and reconfigured at runtime. This pattern aims to decouple the senders of a request from its
 receivers by allowing request to move through chained
-receivers until it is handled.
-
-Request receiver in simple form keeps a reference to a single successor.
+receivers until it is handled. Request receiver in simple form keeps a reference to a single successor.
 As a variation some receivers may be capable of sending requests out
 in several directions, forming a `tree of responsibility`.
-
-*TL;DR
-Allow a request to pass down a chain of receivers until it is handled.
 """
 
 import abc

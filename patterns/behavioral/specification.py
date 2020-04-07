@@ -1,8 +1,8 @@
 """
-@author: Gordeev Andrey <gordeev.and.and@gmail.com>
-
-*TL;DR
-Provides recombination business logic by chaining together using boolean logic.
+:testcase_name specification
+:author Gordeev Andrey <gordeev.and.and@gmail.com>
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/specification.py
+:description Provides recombination business logic by chaining together using boolean logic.
 """
 
 from abc import abstractmethod

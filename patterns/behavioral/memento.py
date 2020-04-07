@@ -1,8 +1,7 @@
 """
-http://code.activestate.com/recipes/413838-memento-closure/
-
-*TL;DR
-Provides the ability to restore an object to its previous state.
+:testcase_name momento
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/memento.py
+:description Provides the ability to restore an object to its previous state.
 """
 
 from copy import copy

@@ -1,5 +1,7 @@
 """
-Dependency Injection (DI) is a technique whereby one object supplies the dependencies (services)
+:testcase_name dependency_injection.py
+:source https://github.com/sritejakv/python-patterns/blob/master/patterns/dependency_injection.py
+:description Dependency Injection (DI) is a technique whereby one object supplies the dependencies (services)
 to another object (client).
 It allows to decouple objects: no need to change client code simply because an object it depends on
 needs to be changed to a different one. (Open/Closed principle)
@@ -106,5 +108,18 @@ def main():
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
+    time_with_ci1 = ConstructorInjection(midnight_time_provider)
+    time_with_ci1.get_current_time_as_html_fragment()
+
+    time_with_ci2 = ConstructorInjection(production_code_time_provider)
+    time_with_ci2.get_current_time_as_html_fragment()
+
+    time_with_pi = ParameterInjection()
+    time_with_pi.get_current_time_as_html_fragment(midnight_time_provider)
+
+    time_with_si = SetterInjection()
+
+    time_with_si.get_current_time_as_html_fragment()
+
+    time_with_si.set_time_provider(midnight_time_provider)
+    time_with_si.get_current_time_as_html_fragment()

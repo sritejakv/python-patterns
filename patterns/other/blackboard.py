@@ -1,12 +1,11 @@
 """
-@author: Eugene Duboviy <eugene.dubovoy@gmail.com> | github.com/duboviy
-
-In Blackboard pattern several specialised sub-systems (knowledge sources)
+:testcase_name blackboard
+:author Eugene Duboviy <eugene.dubovoy@gmail.com> | github.com/duboviy
+:source https://github.com/faif/python-patterns/blob/master/patterns/other/blackboard.py
+:description In Blackboard pattern several specialised sub-systems (knowledge sources)
 assemble their knowledge to build a possibly partial or approximate solution.
 In this way, the sub-systems work together to solve the problem,
 where the solution is the sum of its parts.
-
-https://en.wikipedia.org/wiki/Blackboard_system
 """
 
 import abc

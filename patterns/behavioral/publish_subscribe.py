@@ -1,7 +1,8 @@
 """
-Reference:
-http://www.slideshare.net/ishraqabd/publish-subscribe-model-overview-13368808
-Author: https://github.com/HanWenfang
+:testcase_name publish_subscribe
+:author https://github.com/HanWenfang
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/publish_subscribe.py
+:description Describes publisher-subscriber pattern in Python
 """
 
 

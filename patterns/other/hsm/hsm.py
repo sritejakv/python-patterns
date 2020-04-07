@@ -1,9 +1,10 @@
 """
-Implementation of the HSM (hierarchical state machine) or
+:testcase_name hsm
+:source https://github.com/faif/python-patterns/blob/master/patterns/other/hsm/hsm.py
+:description Implementation of the HSM (hierarchical state machine) or
 NFSM (nested finite state machine) C++ example from
 http://www.eventhelix.com/RealtimeMantra/HierarchicalStateMachine.htm#.VwqLVEL950w
 in Python
-
 - single source 'message type' for state transition changes
 - message type considered, messages (comment) not considered to avoid complexity
 """

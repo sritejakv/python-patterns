@@ -1,6 +1,7 @@
 """
-*TL;DR
-Provides an interface to resource that is expensive to duplicate.
+:testcase_name proxy
+:source https://github.com/faif/python-patterns/blob/master/patterns/structural/proxy.py
+:description Provides an interface to resource that is expensive to duplicate.
 """
 
 import time

@@ -1,7 +1,7 @@
 """
-*What is this pattern about?
-
-In Java and other languages, the Abstract Factory Pattern serves to provide an interface for
+::testcase_name abstract_factory
+:source https://github.com/faif/python-patterns/blob/master/patterns/creational/abstract_factory.py
+:description In Java and other languages, the Abstract Factory Pattern serves to provide an interface for
 creating related/dependent objects without need to specify their
 actual class.
 
@@ -12,22 +12,12 @@ In Python, the interface we use is simply a callable, which is "builtin" interfa
 in Python, and in normal circumstances we can simply use the class itself as
 that callable, because classes are first class objects in Python.
 
-*What does this example do?
 This particular implementation abstracts the creation of a pet and
 does so depending on the factory we chose (Dog or Cat, or random_animal)
 This works because both Dog/Cat and random_animal respect a common
 interface (callable for creation and .speak()).
 Now my application can create pets abstractly and decide later,
 based on my own criteria, dogs over cats.
-
-*Where is the pattern used practically?
-
-*References:
-https://sourcemaking.com/design_patterns/abstract_factory
-http://ginstrom.com/scribbles/2007/10/08/design-patterns-python-style/
-
-*TL;DR
-Provides a way to encapsulate a group of individual factories.
 """
 
 import random

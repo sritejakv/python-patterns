@@ -1,9 +1,7 @@
 """
-Implementation of the state pattern
-
-http://ginstrom.com/scribbles/2007/10/08/design-patterns-python-style/
-
-*TL;DR
+:testcase_name state
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/state.py
+:description Implementation of the state pattern
 Implements state as a derived class of the state pattern interface.
 Implements state transitions by invoking methods from the pattern's superclass.
 """

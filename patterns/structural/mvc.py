@@ -1,6 +1,7 @@
 """
-*TL;DR
-Separates data in GUIs from the ways it is presented, and accepted.
+:testcase_name mvc
+:source https://github.com/faif/python-patterns/blob/master/patterns/structural/bridge.py
+:description https://github.com/faif/python-patterns/blob/master/patterns/structural/mvc.py
 """
 
 

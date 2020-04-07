@@ -1,10 +1,8 @@
 """
-*What is this pattern about?
-Define a family of algorithms, encapsulate each one, and make them interchangeable.
+:testcase_name strategy
+:source https://github.com/faif/python-patterns/blob/master/patterns/behavioral/strategy.py
+:description Define a family of algorithms, encapsulate each one, and make them interchangeable.
 Strategy lets the algorithm vary independently from clients that use it.
-
-*TL;DR
-Enables selecting an algorithm at runtime.
 """
 
 

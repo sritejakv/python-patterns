@@ -1,7 +1,8 @@
-"""*What is this pattern about?
-A Factory is an object for creating other objects.
+"""
+:testcase_name factory
+:source https://github.com/faif/python-patterns/blob/master/patterns/creational/factory.py
+:description A Factory is an object for creating other objects.
 
-*What does this example do?
 The code shows a way to localize words in two languages: English and
 Greek. "get_localizer" is the factory function that constructs a
 localizer depending on the language chosen. The localizer object will
@@ -9,20 +10,6 @@ be an instance from a different class according to the language
 localized. However, the main code does not have to worry about which
 localizer will be instantiated, since the method "localize" will be called
 in the same way independently of the language.
-
-*Where can the pattern be used practically?
-The Factory Method can be seen in the popular web framework Django:
-http://django.wikispaces.asu.edu/*NEW*+Django+Design+Patterns For
-example, in a contact form of a web page, the subject and the message
-fields are created using the same form factory (CharField()), even
-though they have different implementations according to their
-purposes.
-
-*References:
-http://ginstrom.com/scribbles/2007/10/08/design-patterns-python-style/
-
-*TL;DR
-Creates objects without having to specify the exact class.
 """
 
 

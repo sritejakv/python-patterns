@@ -1,8 +1,8 @@
 """
-Reference: https://en.wikipedia.org/wiki/Delegation_pattern
-Author: https://github.com/IuryAlves
-
-*TL;DR
+:testcase_name delegation_pattern
+:author https://github.com/IuryAlves
+:source https://github.com/faif/python-patterns/blob/master/patterns/fundamental/delegation_pattern.py
+:description Demonstrates delegation pattern in Python.
 Allows object composition to achieve the same code reuse as inheritance.
 """
 
